@@ -102,5 +102,19 @@ button:hover {
 .member-details{
     width: 70%;
 }
-
-
+@media(max-width:500px){
+    header{
+        height: 65rem;
+    }
+    button{
+        margin-top: 20px;
+        margin-bottom:20px;
+    }
+    .headerSection p {
+        width: 120%;
+        text-align: center;
+    }
+    .sautivideo{
+        width: 5rem;
+    }
+}
