@@ -9,6 +9,7 @@ footer input {
   margin-left: 500px;
   margin-right: 400px;
   padding: 10px 15px;
+  width: 30%;
 }
 footer h2 {
   color: white;
@@ -22,6 +23,7 @@ footer p {
 footer .footer-btn {
   margin-right: 400px;
   margin-left: 500px;
+  height: 3rem;
 }
 footer img {
   display: flex;
@@ -30,16 +32,48 @@ footer img {
   width: 50%;
   margin-left: 20rem;
 }
+@media (max-width: 500px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: 1rem;
+  }
+  footer input {
+    width: 60%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  footer .footer-btn {
+    width: 50%;
+    height: 3rem;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  footer h2 {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-top: 2rem;
+  }
+  footer p {
+    margin-left: 10px;
+  }
+}
+nav {
+  margin-top: -2rem;
+}
 nav a {
   text-decoration: none;
   color: white;
-  padding-top: 2rem;
+  padding-top: 4rem;
+  font-size: 2rem;
 }
 .navig {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 70rem;
+  width: 130rem;
   background-color: #1d2c3c;
 }
 .navig img {
@@ -53,15 +87,17 @@ nav a {
     width: 500px;
     height: -2rem;
   }
-  body .navig {
+  .navig {
+    display: flex;
+    flex-direction: row-reverse;
     width: 500px;
     height: -2rem;
+    font-size: 0.75rem;
   }
 }
 html,
 body {
   font-size: 62.5%;
-  margin: 0rem;
   font-size: 1.2rem;
 }
 body {
@@ -74,7 +110,7 @@ header {
   /* display: flex;
     justify-content: center;     */
   /* margin-top: 3.1rem; */
-  width: 100%;
+  width: 130rem;
   /* height: 35rem; */
   color: aliceblue;
   /* margin-right: 2.5 rem;
@@ -84,18 +120,24 @@ header {
   background-color: #6e1423;
   border-radius: 10px;
   opacity: 0.7;
-  height: 100vh;
-  width: 85%;
+  height: 80vh;
+  width: 130rem;
   text-align: center;
   /* margin-top: 4rem; */
-  padding: 1rem 5rem;
+  padding-top: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.headerSection .hstext {
+  font-size: 50rem;
+  vertical-align: center;
 }
 button {
-  width: 15rem;
-  height: 3rem;
+  width: 25rem;
+  height: 7rem;
   border-radius: 10px;
   margin: 40px;
-  font-size: 100%;
+  font-size: 2rem;
 }
 button:hover {
   background-color: hotpink;
@@ -113,6 +155,8 @@ button:hover {
   margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  padding-top: 4rem;
+  color: black;
 }
 .subserv1 {
   width: 45%;
@@ -131,6 +175,8 @@ button:hover {
   margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  padding-top: 4rem;
+  color: black;
 }
 .subserv2 {
   width: 45%;
@@ -149,6 +195,8 @@ button:hover {
   margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  padding-top: 4rem;
+  color: black;
 }
 .subserv3 {
   width: 45%;
@@ -167,6 +215,8 @@ button:hover {
   margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  padding-top: 4rem;
+  color: black;
 }
 .subserv4 {
   width: 45%;
@@ -178,11 +228,16 @@ button:hover {
 .s {
   color: white;
   background-color: #1d2c3c;
+  text-align: center;
+  height: 10rem;
+  padding-top: 2.5rem;
 }
 .sautivideo {
+  display: flex;
+  justify-content: center;
   background-color: #FFEC04;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 /* .fab{
     color:white;
@@ -194,22 +249,80 @@ button:hover {
     
 } */
 @media (max-width: 500px) {
+  body {
+    width: 500px;
+  }
   header {
-    height: 65rem;
+    height: 80rem;
+    width: 500px;
   }
   button {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .headerSection p {
-    width: 120%;
+  .headerSection {
+    width: 500px;
+    height: 70rem;
     text-align: center;
   }
   .services {
-    display: block;
+    display: flex;
+    flex-basis: column;
+    justify-content: center;
+  }
+  .services .s {
+    width: 50%;
+  }
+  .services .serv1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .services .serv1 .subserv1 {
+    width: 100%;
+  }
+  .services .serv1 img {
+    width: 100%;
+  }
+  .services .serv2 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .services .serv2 .subserv2 {
+    width: 100%;
+  }
+  .services .serv2 img {
+    width: 100%;
+  }
+  .services .serv3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .services .serv3 .subserv3 {
+    width: 100%;
+  }
+  .services .serv3 img {
+    width: 100%;
+  }
+  .services .serv4 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .services .serv4 .subserv4 {
+    width: 100%;
+  }
+  .services .serv4 img {
+    width: 100%;
   }
   .sautivideo {
-    width: 5rem;
+    width: 100%;
   }
 }
 .aboutus h2 {
@@ -222,12 +335,17 @@ button:hover {
   margin: 1rem 0;
 }
 .member img {
-  width: 15rem;
-  height: 15rem;
+  width: 30rem;
+  height: auto;
   border-radius: 2.5px;
 }
 .member-details {
   width: 70%;
+  padding-top: 5rem;
+}
+.member-details h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 .thisteam {
   color: white;
@@ -278,4 +396,174 @@ button:hover {
   .ourteambody {
     width: 490px;
   }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
