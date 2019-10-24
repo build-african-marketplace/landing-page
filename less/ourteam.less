@@ -1,0 +1,91 @@
+
+// .aboutus{
+//     display: flex;
+//     flex-direction:column;
+//     text-align: center;
+//     width: 100%;
+//     /* margin-top: */
+//     background-color:black;
+//     color:black;
+// }
+
+.aboutus h2{
+    color: black;
+    
+}
+
+
+
+.member{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.member img{
+    width: 15rem;
+    height:15rem;
+    border-radius: 2.5px;
+}
+
+.member-details{
+    width: 70%;
+}
+
+.thisteam{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    text-align: center;
+    background-color: gray;
+
+}
+
+.ourteam{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-image: url('../images/dream.jpg');
+    border-radius: 12px;
+    padding: 2rem;
+}
+.ourteambody{
+    background-color: white;
+    h1{
+        margin-left: 400px;;
+        color: black;
+    }
+}
+@media @phone{
+    .member{
+            display: block;
+            text-align: center;
+        .member-details{
+            margin-left: 1.5rem;
+            width: 80%;
+            margin-right: 2rem;
+        }
+    }
+    .ourteam{
+        background-image: url("../images/pearl.jpg");
+        margin-right: -.5rem;
+        margin-left: -1.5rem;
+    }
+
+    .thisteam{
+        width: 500px;
+    }
+
+    .ourteambody .titletop{
+        margin-left: -370px;
+    }
+
+    
+    .ourteambody{
+        width: 490px;
+    }
+}
